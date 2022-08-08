@@ -1,0 +1,354 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Inter:wght@100;200;300;400;500;600;700&family=Lexend+Deca&family=Montserrat:wght@200;300;400;500;700&family=Outfit&family=Poppins:wght@200;400;600;700&display=swap');
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color--: black;
+    --button-color--: pink;
+    --footer-back--: hsl(192, 100%, 9%);
+    --page-back--:white;
+    --box-shadow--: -2px -2px 3px rgb(199, 199, 199), 2px 2px 3px rgb(199, 199, 199);
+    --box-shadow2--: -2px -2px 3px rgb(173, 173, 173), 2px 2px 3px rgb(173, 173, 173);
+    --box-shadow-inset-: inset -2px -2px 3px rgb(173, 173, 173), inset 2px 2px 3px rgb(173, 173, 173);
+    --glassy-shadow--: -1px -1px 2px rgb(248, 248, 248), 1px 1px 2px rgb(248, 248, 248),inset -1px -1px 1px rgb(248, 248, 248), inset 1px 1px 2px rgb(248, 248, 248);
+    --box-button--shadow--: 0px 10px 15px hsla(322, 100%, 66%, 0.541); 
+    --box-button--shadow-hover--: 0px 10px 15px hsla(322, 74%, 79%, 0.541); 
+    --line--height--: 30px;
+    
+    
+}
+
+
+.shadow-button{
+    background-color: hsl(322, 100%, 66%) ;
+    width: 300px;
+    padding: 25px 0;
+    border: none;
+    color: var(--page-back--);
+    border-radius: 30px;
+    /* box-shadow: var(--box-button--shadow--); */
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    
+}
+.shadow-button:hover{
+    cursor: pointer;
+    background-color: hsl(322, 79%, 81%) ;
+    box-shadow: var(--box-button--shadow-hover--);
+  
+}
+
+html{
+    font-size: 62.5%;
+    
+}
+
+body{
+    color:  hsl(192, 100%, 9%);
+
+}
+h1{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+h2{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 50px;
+    font-family: 'Poppins', sans-serif;
+    color:  hsl(192, 100%, 9%);
+}
+h3{
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    color:  hsl(192, 100%, 9%);
+}
+h4{
+    margin-bottom:15px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+h5{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(208, 11%, 55%);
+}
+h6{
+    line-height: 25px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+/* HEADER SECTION */
+
+header{
+    background-color: hsl(193, 100%, 96%);
+}
+#container{
+    width: 100%;
+    height: auto;
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background: url('../images/bg-hero-desktop.svg') no-repeat center center/cover;
+    align-items: center;
+    
+}
+/* NAVIGATION */
+header nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+header nav .logo img{
+    width: 80%;
+}
+header nav button{
+    padding: 15px 0;
+    width: 200px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: var(--box-shadow--);
+    background-color: var(--page-back--);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+header nav button:hover{
+    background-color: rgb(221, 221, 221);
+    cursor: pointer;
+}
+
+/* HEAD CONTENT */
+
+header .main-head{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+header .main-head .head-content{
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 500px;
+    justify-content: center;
+    position: relative;
+    
+    
+}
+
+header .main-head .head-image{
+    flex: 1.2;
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    height: 80%;
+}
+
+header .main-head .head-image .pics{
+    display: flex;
+    justify-content: right;
+    background: url('../images/illustration-mockups.svg') no-repeat center center/cover;
+    background-size: contain;
+    width: 90%;
+    height: 500px;
+    margin-right: -17px;
+}
+
+
+/* = MAIN SECTION */
+
+main{
+    width: 100%;
+    padding: 100px 60px 350px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: 30px;
+    position: relative;
+}
+
+main section{
+    width: 80%;
+    height: auto;
+    background-color: var(--page-back--);
+    box-shadow: var(--box-shadow--);
+    border-radius: 15px;
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    
+}
+main section .image1{
+    flex: 1;
+}
+main section .content1{
+    flex: 1;
+}
+main section .content1:nth-child(odd){
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    /* flex-wrap: wrap; */
+}
+main section .content1:nth-child(even){
+    display: flex;
+    width: 70%;
+    justify-content: right;
+    align-items: center;
+}
+
+
+main section .content1 .speak{
+    
+    width: 100%;
+    text-align: left;
+
+}
+
+
+
+main section .inner-pics:nth-child(odd){
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+    
+}
+
+main .second-content .inner-pics{
+    display: flex;
+    width: 100%;
+    justify-content: left !important;
+    align-items: center;
+    padding-left: 50px;
+    
+}
+
+main section .image1 img{
+    
+    width: 80%;
+    
+}
+
+
+/* ASIDE SECTION */
+
+aside{
+    height: 300px;
+    width: 50%;
+    border-radius: 15px;
+    position: absolute;
+    bottom: -80px;
+    background-color: var(--page-back--);
+    box-shadow: var(--box-shadow--);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+
+/* FOOTER */
+footer{
+    width: 100%;
+    background-color: var(--footer-back--);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 120px 60px 60px 120px;
+    color: var(--page-back--);
+    position: static;
+    bottom: 0;
+}
+footer .myFooter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--page-back--);
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.myFooter > div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.myFooter > div h6{
+    display: flex;
+    gap: 20px;
+    font-size: 1.6rem;
+}
+.myFooter > div h6 img{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    gap: 20px;
+}
+footer h3 img{
+    width: 210px;
+    /* height: 40px; */
+}
+.myFooter h3{
+    color: white;
+    
+
+
+}
+.myFooter div:nth-child(2) h6:hover,
+.myFooter div:nth-child(3) h6:hover{
+
+text-decoration: underline;
+color: white;
+cursor: pointer;
+
+}
+.myFooter div:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.myFooter > div .social-logo{
+    display: flex;
+    gap: 30px;
+    
+}
+.myFooter > div .social-logo i{
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 500%;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
